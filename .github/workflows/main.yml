@@ -1,11 +1,11 @@
-name: new issues
+name: New issues
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited, milestoned]
     
 jobs:
-  comment-with-action:
+  linux_action:
     runs-on: ubuntu-latest
     steps:
       - name: "dump github context"
